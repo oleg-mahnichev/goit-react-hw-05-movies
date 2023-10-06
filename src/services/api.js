@@ -2,12 +2,12 @@ import axios from "axios";
 import { Notify } from "notiflix";
 
 const URL = "https://api.themoviedb.org/3";
-const KEY = "13b0b106d3860aa17f500bd5bf9a1afe";
+const KEY = "05599487b76279188c4aa1af8d6b94c3";
 export const paramsForNotify = {
-  position: 'center-center',
-  timeout: 3000,
-  width: '400px',
-  fontSize: '24px'
+    position: 'center-center',
+    timeout: 3000,
+    width: '400px',
+    fontSize: '24px'
 };
 
 export async function fetchMovies(endPoint) {

@@ -8,10 +8,6 @@ import {
 const Searchbar = ({ onSubmitSearchBar, value }) => (
   <SearchbarStyle>
     <SearchForm onSubmit={onSubmitSearchBar}>
-      <SearchFormButton>
-        <span>Search</span>
-      </SearchFormButton>
-
       <SearchFormInput
         type="text"
         name="search"
@@ -20,6 +16,9 @@ const Searchbar = ({ onSubmitSearchBar, value }) => (
         defaultValue={value}
         placeholder="Search movies"
       />
+      <SearchFormButton>
+        <span>Search</span>
+      </SearchFormButton>
     </SearchForm>
   </SearchbarStyle>
 );
